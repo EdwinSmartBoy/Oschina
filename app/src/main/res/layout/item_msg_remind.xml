@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--用户详情部分-->
+    <RelativeLayout
+        android:background="@android:color/transparent"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/widget_dface"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"
+            />
+
+        <!--名称-->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/civ_user_pic"
+            android:text="heima程序员"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="13sp"/>
+
+        <!--状态-->
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/civ_user_pic"
+            android:text="更新了动态"
+            android:textColor="#66000000"
+            android:textSize="12sp"/>
+
+        <!--时间-->
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="2015-07-19"
+            android:textColor="#66000000"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_response"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_status"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/civ_user_pic"
+            android:text="我是程序员,我来测个试.哈哈"
+            android:textColor="#000"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

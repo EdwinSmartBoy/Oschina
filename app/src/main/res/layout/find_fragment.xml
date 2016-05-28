@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mydroid.oschina.view.CustomerScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/find_fragment_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            style="@style/find_item_holdstyle"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_find_friends"
+                style="@style/find_item_normalstyle"
+                android:layout_toRightOf="@id/tv_find_friends"
+                android:drawableLeft="@drawable/icon_explore_friends"
+                android:text="朋友圈"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            style="@style/find_item_holdstyle"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_find_finduser"
+                style="@style/find_item_normalstyle"
+                android:layout_toRightOf="@id/tv_find_finduser"
+                android:drawableLeft="@drawable/icon_explore_finduser"
+                android:text="找人"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EBEBEB"/>
+            <TextView
+                android:id="@+id/tv_find_event"
+                style="@style/find_item_normalstyle"
+                android:layout_toRightOf="@id/tv_find_event"
+                android:drawableLeft="@drawable/icon_explore_event"
+                android:text="活动"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            style="@style/find_item_holdstyle"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_find_scan"
+                style="@style/find_item_normalstyle"
+                android:layout_toRightOf="@id/tv_find_scan"
+                android:drawableLeft="@drawable/icon_explore_scan"
+                android:text="扫一扫"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EBEBEB"/>
+            <TextView
+                android:layout_marginTop="1dp"
+                android:id="@+id/tv_find_shake"
+                style="@style/find_item_normalstyle"
+                android:layout_toRightOf="@id/tv_find_shake"
+                android:drawableLeft="@drawable/icon_explore_shake"
+                android:text="摇一摇"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            style="@style/find_item_holdstyle"
+            />
+
+
+    </LinearLayout>
+</com.mydroid.oschina.view.CustomerScrollView>

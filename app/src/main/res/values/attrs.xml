@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SettingItemView">
+        <attr name="desc" format="string"/>
+    </declare-styleable>
+
+    <!--发现_找人-->
+    <attr name="lineColor" format="reference"/>
+    <attr name="layout_item_bg" format="reference"/>
+    <attr name="textColor" format="reference"/>
+</resources>

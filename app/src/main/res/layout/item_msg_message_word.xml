@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--用户详情部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <!--头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/widget_dface"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"
+            />
+
+        <!--名称-->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/civ_user_pic"
+            android:text="heima程序员"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/civ_user_pic"
+            android:background="@drawable/message_word_bg_selector"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_sup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="center_vertical"
+                android:text="xxx觉得很赞"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2015-07-19"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/tv_message_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2条留言"
+                    android:textSize="12sp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

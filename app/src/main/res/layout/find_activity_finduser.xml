@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#40AA53"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/search_icon"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:cursorVisible="true"
+                android:hint="请输入用户昵称"
+                android:singleLine="true"
+                android:textColor="#aaaaaa"
+                android:textColorHint="#ffa9a9a9"
+                android:textSize="16sp"/>
+            <ImageButton
+                android:id="@+id/find_finduser_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:background="@color/transparent"
+                android:src="@drawable/icon_record_delete"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!--文本输入框下方区域-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--成功的时候显示listview-->
+        <ListView
+            android:id="@+id/lv_finduser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <!--加载不成功显示-->
+        <com.mydroid.oschina.ui.empty.EmptyLayout
+            android:id="@+id/not_sucess_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="visible">
+
+        </com.mydroid.oschina.ui.empty.EmptyLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

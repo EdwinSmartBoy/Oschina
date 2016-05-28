@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!--粉丝-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <!--头像-->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_pic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/widget_dface"
+            app:civ_border_color="#fff"
+            app:civ_border_width="2dp"
+            />
+
+        <!--名称-->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/civ_user_pic"
+            android:text="heima程序员"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="13sp"/>
+
+        <!--性别-->
+        <ImageView
+            android:id="@+id/iv_gender"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/tv_name"
+            android:src="@drawable/userinfo_icon_male"/>
+
+        <!--地址-->
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/civ_user_pic"
+            android:text="陕西 宝鸡"
+            android:textColor="#66000000"
+            android:textSize="12sp"/>
+
+        <!--简介-->
+        <TextView
+            android:layout_toRightOf="@id/civ_user_pic"
+            android:id="@+id/tv_response"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_status"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#66000000"
+            android:textSize="12sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

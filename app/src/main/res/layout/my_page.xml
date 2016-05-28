@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.mydroid.oschina.widget.CustomerScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ly_code"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--头像部分的布局-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@drawable/user_center_bg"
+            >
+            <!--二维码图标-->
+            <ImageView
+                android:id="@+id/iv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/icon_qr_code"/>
+            <!--积分,收藏...按钮-->
+            <LinearLayout
+                android:id="@+id/ly_button"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/jigen"
+                    android:background="@drawable/item_green_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/jifen_count"
+                        style="@style/my_button"
+                        android:text="20"
+                        />
+
+                    <TextView
+                        style="@style/my_button"
+                        android:text="积分"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/item_green_selector"
+                    android:id="@+id/shouchang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/shouchang_count"
+                        style="@style/my_button"
+                        android:text="5"/>
+
+                    <TextView
+                        style="@style/my_button"
+                        android:text="收藏"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/item_green_selector"
+                    android:id="@+id/guanzhu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/guanzhu_count"
+                        style="@style/my_button"
+                        android:text="12"/>
+
+                    <TextView
+                        style="@style/my_button"
+                        android:text="关注"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/item_green_selector"
+                    android:id="@+id/fensi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fensi_count"
+                        style="@style/my_button"
+                        android:text="5"/>
+
+                    <TextView
+                        style="@style/my_button"
+                        android:text="粉丝"/>
+                </LinearLayout>
+            </LinearLayout>
+            <!--线-->
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@id/ly_button"
+                android:background="#18bd40"
+                />
+            <!--头像以及名字-->
+            <RelativeLayout
+                android:id="@+id/userdes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/line"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                >
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/iv_face"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/widget_dface"
+                    app:civ_border_color="#fff"
+                    app:civ_border_width="2dp"
+                    />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_face"
+                    android:gravity="center"
+                    android:text="name"
+                    android:textColor="#fff"
+                    android:textSize="20sp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/iv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/user_name"
+                    android:layout_alignEnd="@id/iv_face"
+                    android:layout_alignRight="@id/iv_face"
+                    android:elevation="5dp"
+                    android:src="@drawable/userinfo_icon_male"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--item-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_message"
+                style="@style/my_item"
+                android:background="@drawable/item_bg_selector"
+                android:clickable="true"
+                android:drawableLeft="@drawable/icon_my_message"
+                android:text="消息"
+                />
+            <!--线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@id/ly_button"
+                android:background="#e1e1e1"/>
+
+            <TextView
+
+                android:id="@+id/item_blog"
+                style="@style/my_item"
+                android:background="@drawable/item_bg_selector"
+                android:drawableLeft="@drawable/icon_my_blog"
+                android:text="博客"
+                />
+            <!--线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@id/ly_button"
+                android:background="#e1e1e1"/>
+
+            <TextView
+                android:id="@+id/item_note"
+                style="@style/my_item"
+                android:background="@drawable/item_bg_selector"
+                android:drawableLeft="@drawable/icon_my_note"
+
+                android:text="便签"
+                />
+
+            <!--线-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@id/ly_button"
+                android:background="#e1e1e1"/>
+            <TextView
+                android:id="@+id/item_team"
+                style="@style/my_item"
+
+                android:background="@drawable/item_bg_selector"
+                android:drawableLeft="@drawable/icon_my_team"
+                android:text="团队"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</com.mydroid.oschina.widget.CustomerScrollView>

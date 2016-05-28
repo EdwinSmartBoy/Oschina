@@ -1,0 +1,106 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary_green</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 这是主界面下面的五个按钮样式 -->
+    <style name="content_tab_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/tab_text_selector</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">#00000000</item>
+    </style>
+
+
+    <!--我界面的按钮样式-->
+    <style name="my_button">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+    <!--android:layout_margin="8dp"-->
+    <style name="my_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_margin">8dp</item>
+
+    </style>
+    <!--发现fragment下的每个条目样式-->
+    <style name="find_item_holdstyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:background">#EBEBEB</item>
+    </style>
+
+    <style name="find_item_normalstyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">#666666</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">10dp</item>
+    </style>
+    <!-- 加载滚动条样式 -->
+    <style name="loading">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateDrawable">@drawable/progressloading</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:indeterminateOnly">true</item>
+    </style>
+
+
+    <!--自定义对话框的style-->
+    <style name="MyDialogStyle">
+        <!-- 背景颜色 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+
+        <!-- 背后的阴影 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 去掉标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 点击外部是否允许取消 -->
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <!-- 定义对话框显示的动画 -->
+        <item name="android:windowAnimationStyle">@style/MyAnimationStyle</item>
+    </style>
+    <!--对话框动画-->
+    <style name="MyAnimationStyle">
+        <item name="android:windowEnterAnimation">@anim/input_method_enter</item>
+        <item name="android:windowExitAnimation">@anim/input_method_exit</item>
+    </style>
+
+
+    <!--用户信息的item样式-->
+    <style name="MyItemStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>
+
+
+    <color name="colorPrimaryDark_black">#000001</color>
+    <color name="colorPrimary_green">#40a953</color>
+
+</resources>

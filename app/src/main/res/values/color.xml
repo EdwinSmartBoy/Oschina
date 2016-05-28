@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="tab_indicator_selected">#40AA53</color>
+    <color name="tab_text_selected">#40AA53</color>
+    <color name="tab_text_normal">#FF8E8888</color>
+
+    <color name="tab_divider_normal">#00ffffff</color>
+
+    <!--发现__找人-->
+    <color name="transparent">#00000000</color>
+
+
+    <color name="main_link_text_color">#ffbedfff</color>
+    <color name="gray">#808080</color>
+    <color name="day_colorPrimary">#40AA53</color>
+    <color name="timeline_clickable_text_highlighted_background">#ffbedfff</color>
+
+</resources>
